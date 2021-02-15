@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Setting word spacing using CSS</title>
+<style> 
+    p.one {
+        word-spacing: 20px;
+    }
+    p.two {
+        width: 150px;
+        word-spacing: 20px;
+        text-align: justify;
+    }
+    p.three {
+        word-spacing: 20px;
+        white-space: pre;
+    }      
+</style>
+</head>
+<body>
+    <p class="one">This is a normal paragraph.</p>
+    <hr>
+    <p class="two">Note that spacing between the words of this paragraph are varying in order to justify the text even if the value of word-spacing property is set to 20px.</p>
+    <hr>
+    <p class="three">Note that spacing between the words
+	of this paragraph are higher than the normal spacing
+		even if whitespace are preserved.</p>
+</body>
+</html>                            

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Styling Different Link States using CSS</title>
+<style>
+    /* unvisited link */            
+    a:link {
+        color: #ff0000;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
+    /* visited link */
+    a:visited {
+        color: #ff00ff;
+    }
+    /* mouse over link */
+    a:hover {
+        color: #00ff00;
+        border-bottom: none;
+    }
+    /* active link */
+    a:active {
+        color: #00ffff;
+    }
+</style>
+</head>
+<body>
+    <p><a href="https://www.tutorialrepublic.com/" target="_top">Visit Tutorial Republic</a></p>
+</body>
+</html>                            
