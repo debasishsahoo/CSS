@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS table-layout property</title>
+<style>             
+    table {
+        width: 250px;
+        border-collapse: separate;            
+    }
+    table, tr, th, td{
+        border: 1px solid #000000;
+    }
+    .auto {
+        table-layout: auto;
+    }
+    .fixed {
+        table-layout: fixed;
+    }
+    td{
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+    <table class="auto">
+        <caption>Example 1. Auto</caption>
+        <tr>
+            <th>Name</th>
+            <td>John Carter</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>johncarter@mail.com</td>
+        </tr>
+    </table>
+    <br>
+    <table class="fixed">
+        <caption>Example 2. Fixed</caption>
+        <tr>
+            <th>Name</th>
+            <td>Peter Parker</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>peterparker@mail.com</td>
+        </tr>
+    </table>
+	<p><strong>Note:</strong> You can see the width of table cell does not change to accommodate the content in fixed table-layout.</p>
+</body>
+</html>

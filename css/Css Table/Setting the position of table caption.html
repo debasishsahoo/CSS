@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS caption-side property</title>
+<style>
+    table, td, th {
+        border: 1px solid gray;
+    }
+    caption {
+		caption-side: bottom;
+	}
+</style>
+</head>
+<body>
+    <table>
+        <caption>Table 1.0 - User Details</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Carter</td>
+                <td>johncarter@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Peter Parker</td>
+                <td>peterparker@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>John Rambo</td>
+                <td>johnrambo@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+	<p><strong>Note:</strong> Internet Explorer 8 supports the caption-side property only if a <code>!DOCTYPE</code> is specified.</p>
+</body>
+</html>

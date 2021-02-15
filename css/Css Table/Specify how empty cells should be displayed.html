@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS empty-cells property</title>
+<style>
+    table {
+        width: 300px;
+        border-collapse: separate;
+    }
+    table, th, td{
+        border: 1px solid #000000;
+    }
+    table.empty-show {
+        empty-cells: show;                        
+    }
+    table.empty-hide {
+        empty-cells: hide;           
+    }        
+</style>
+</head>
+<body>
+    <h2>Table with Empty-cells</h2>
+    <table class="empty-show">
+        <tr>
+            <th>Name</th>
+            <td>John Carter</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <h2>Table with Hidden Empty-cells</h2>
+    <table class="empty-hide">
+        <tr>
+            <th>Name</th>
+            <td>Peter Parker</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+    <p><strong>Note:</strong> You can see the empty cell in the second example table is completely hidden. Non-breaking space (i.e. &amp;nbsp;) is considered as content.</p>
+</body>
+</html>
