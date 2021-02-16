@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example of CSS overflow property</title>
+  <style>
+      div {
+          width: 250px;
+          height: 150px;
+          border: 1px solid #cccccc;
+      }
+      div.scroll {            
+          overflow: scroll;
+      }
+      div.hidden {
+          overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  <h1>Play with the size of div boxes to see how it works</h1>
+  <h2>overflow:scroll</h2>
+  <div class="scroll">
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+  </div>
+  <h2>overflow:hidden</h2>
+  <div class="hidden">
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+  </div>
+</body>
+</html> 

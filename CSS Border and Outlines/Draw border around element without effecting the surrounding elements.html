@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS border</title>
+<style>
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li {
+        float: left;        
+        margin: 10px;        
+    }
+    ul li img {
+        display: block;
+        background: #f7f7f7;
+    }
+    ul li:hover {
+        border: 5px solid #333333;
+        overflow: hidden;        
+    }
+    ul li:hover img{
+        margin: -5px;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><img src="./images/club.jpg" alt="Club Card"></li>
+        <li><img src="./images/diamond.jpg" alt="Diamond Card"></li>
+        <li><img src="./images/spade.jpg" alt="Spade Card"></li>
+        <li><img src="./images/heart.jpg" alt="Heart Card"></li>
+    </ul>
+</body>
+</html>

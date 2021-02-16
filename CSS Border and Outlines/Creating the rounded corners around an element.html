@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS3 border-radius property</title>
+    <style>
+		div {
+			padding: 15px;
+			margin-bottom: 20px;
+			background: #ffb6c1;
+			border: 2px solid #f08080;
+		}
+		div.one {
+			border-radius: 20px;
+		}
+		div.two {
+			border-radius: 10px 30px;
+		}
+		div.three {
+			border-radius: 10px 30px 20px;
+		}
+		div.four {
+			border-radius: 10px 20px 30px 40px;
+		} 
+    </style>
+</head>
+<body>
+    <div class="one"><strong>one-value syntax:</strong> the single value defines the radius of all corners.</div>
+    <div class="two"><strong>two-value syntax:</strong> the first value defines the radius of top-left and bottom-right corner, while the second value defines the radius of top-right and bottom-left sides corner.</div>
+    <div class="three"><strong>three-value syntax:</strong> the first value defines the radius of top-left corner, the second value defines the radius of top-right and bottom-left corner, and the third value defines the radius of bottom-right corner.</div>
+    <div class="four"><strong>four-value syntax:</strong> each value defines the radius of the border individually in the order top-left, top-right, bottom-right, and bottom-left corner.</div>
+    <p><strong>Warning:</strong> Internet Explorer 8 and earlier versions don't support the <code>border-radius</code> property.</p>
+</body>
+</html> 
