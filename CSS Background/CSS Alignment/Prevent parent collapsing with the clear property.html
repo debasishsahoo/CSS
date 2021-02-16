@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of clearing floats</title>
+<style>
+    .container{
+        background: yellow;
+        border: 1px solid #c4884d;      
+    }
+    .clearfix {
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+    p {
+        width: 200px;        
+        margin: 10px;
+        padding: 10px;
+    }
+    .red {
+        float: left;       
+        background: #ff0000;
+    }
+    .green {
+        float: right;
+        background: #00ff00;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p class="red">Floated to left.</p>
+        <p class="green">Floated to right.</p>
+        <div class="clearfix">&nbsp;</div>
+    </div>
+</body>
+</html> 

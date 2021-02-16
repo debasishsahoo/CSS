@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Background Clipping</title>
+<style>
+	.box {
+		width: 250px;
+		height: 150px;
+		padding: 10px;
+		border: 6px dashed #333;
+		background: orange;
+	}
+	.clip1 {
+		background-clip: border-box;
+	}
+	.clip2 {
+		background-clip: padding-box;
+	}
+	.clip3 {
+		background-clip: content-box;
+	}
+</style>
+</head>
+<body>
+    <h2>Default Background Behavior</h2>
+    <div class="box"></div>
+    <h2>Background Clipping Using border-box</h2>
+    <div class="box clip1"></div>
+    <h2>Background Clipping Using padding-box</h2>
+    <div class="box clip2"></div>
+    <h2>Background Clipping Using content-box</h2>
+    <div class="box clip3"></div>
+</body>
+</html>
